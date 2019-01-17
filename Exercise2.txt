@@ -1,0 +1,17 @@
+UNF DB(staffNo, appointment, dentistname, patientNo, patientName, surgeryNo)
+1NF DB(staffNO, apptDate, apptTime, dentistname, patientNo, patientName, surgeryNo)
+	keys(staffNo, apptdate, appTime)
+
+2NF 
+Appointment(staffNO, apptDate, ApptTime, PatientNo, PatientName)
+Surgery(staffNo, apptDate, surgeryNo)
+Dentist(staffNo, dentistName)
+	Keys(staffNo, apptDate, apptTime – Staffno, apptdate – staffNo)
+
+3NF
+Dentist(StafffNo, DentistName)
+Surgery(staffNo, apptDate, SurgeryNo)
+Patient(PatientNo, patientName)
+Appointment(staffNo, apptDate, apptTime, patientNo)
+
+BCNF = 3NF
