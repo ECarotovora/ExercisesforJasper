@@ -1,0 +1,28 @@
+mkdir ExercisesforJasper
+git init
+git status
+touch Exercise.txt
+cat > Exercises.txt
+Hello how are you doinog ==> ctrl+C
+ll
+git add Exercise.txt
+git commit -m "Created exercise file"
+cat > Exercise.txt
+Ik maak nieuwe changes ==> ctrl+C
+ll
+git diff
+git commit -m "Nieuwe lijntje"
+git diff
+git status
+git add Commit.txt
+git commit -m "Added help for commits"
+git diff
+git status
+git diff
+git add Exercise.txt
+git commit -m "Nog is"
+git status
+git push ExercisesforJasper master
+git remote -v
+git pull ExercisesforJasper master
+touch Exercise1.txt
