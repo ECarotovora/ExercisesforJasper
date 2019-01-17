@@ -8,3 +8,11 @@ To add all files changes
 git add .
 To commit (aka save) the changes you've added with a short message describing the changes
 git commit -m "your commit message"
+
+Short
+git status
+git add "New file"
+git status
+git commit -m  "Changes message"
+gif diff
+git push ExercisesforJasper master
