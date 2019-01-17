@@ -1,12 +1,17 @@
-UNF (patientNo, Full name,bed number, WardNo, Wardname, drugNo, name, description, Dosage, Method of Admin, Units per day, Start date, finish date)
-1NF Info(patientNo, drugNo,Unitsperday,Start date, finish date)
-    Rest(full name, bed number,WardNo, Wardname,name,Description, Dosage,Method of admin)
-2NF Info(patientNo, drugNo, Unitsperday, Start date)
-  Patient(patientNo, Full name, Bed number)
-  Drugs(Name,Description,Dosage,Method of admin,Units per day)
-  Rest(wardNo,wardName)
-3NF Info(patientNo, drugNo, Unitsperday, Start date)
-    Patient(patientNo, Full name, Bed number)
-    Drugs(Name,Description, Dosage,Method of admin, Units per day, finish date)
-    Ward(wardNo,wardName)
+UNF Info(patientNo, Full name,bed number, WardNo, Wardname, drugNo, name, description, Dosage, Method of Admin, Units per day, Start date, finish date)
 
+1NF Info(patientNo,Fullname,bed number, WardNo,Wardname,drugNo, name, description, Dosage, Method of admin, units per day, Start date, finish date)
+Keys(patientNo,drugNo,Start date)
+
+2NF Info(patientNo, drugNo,bed number, Unitsperday, Start, finish date, wardNo, wardName,bednumber)
+  Keys(patientNo, drugNo,Start date)
+  Patient(patientNo, Full name)
+  Drugs(DrugNo,Name,Description,Dosage,Method of admin)
+  
+3NF Info(patientNo,drugNo,Unitsperday, start date, finish date)
+Keys(patientNo, drugNo, Start date)
+Patient(patientNo, Full name)
+Drugs(DrugNo,Name,Description,Dosage,Method of Admin)
+Ward(wardNO,wardName,bednumber)
+
+BCNF=3NF
