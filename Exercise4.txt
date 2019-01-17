@@ -1,0 +1,1 @@
+Models--> press + --> new database model is created-->Add a new diagram--> click create new table-->double click to edit table-->choosename for table-->Add columns
