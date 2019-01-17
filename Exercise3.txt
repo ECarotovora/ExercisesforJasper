@@ -1,1 +1,3 @@
 UNF (patientNo, Full name,bed number, WardNo, Wardname, drugNo, name, description, Dosage, Method of Admin, Units per day, Start date, finish date)
+1NF Info(patientNo, drugNo,Unitsperday,Start date, finish date)
+    Rest(full name, bed number,WardNo, Wardname,name,Description, Dosage,Method of admin)
